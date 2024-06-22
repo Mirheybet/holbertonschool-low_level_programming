@@ -2,12 +2,13 @@
 /*
  *
  *add - main
+ *@a - var 1
+ *@b - var 2
  *Return: zero
  *
  */
-int add(int a, int b);
+int add(int a, int b)
 {
-int a, int b;
 return (a + b);
 
 
