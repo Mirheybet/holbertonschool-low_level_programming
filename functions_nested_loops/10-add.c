@@ -1,4 +1,4 @@
-#include 'main.h'
+#include "main.h"
 /*
  *
  *add - main
@@ -8,7 +8,7 @@
 int add(int a, int b);
 {
 int a, int b;
-_putch(a + b);
+return (a + b);
 
 
 }
