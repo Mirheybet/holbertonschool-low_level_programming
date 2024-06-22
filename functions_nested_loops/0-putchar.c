@@ -1,9 +1,9 @@
-#include"holberton.h"
+#include <stdio.h>
 
 /**
-* main - Entry point
+* main - int main
 *
-* Return: Always 0 (Success)
+* Return - zero
 */
 int main(void)
 {
