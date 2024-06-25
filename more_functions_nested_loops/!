@@ -15,7 +15,7 @@ void more_numbers(void)
 			{
 				_putchar(eded / 10 + '0');
 				_putchar(eded % 10 + '0');
-			}
+			}	
 			else
 				_putchar(eded + '0');
 		}
