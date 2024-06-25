@@ -11,7 +11,8 @@ void more_numbers(void)
 	{
 		for (eded = 0; eded <= 14; eded++)
 		{
-			_putchar(eded + '0');
+			_putchar(eded / 10 + '0');
+			_putchar(eded % 10 + '0');
 		}
 	}
 	_putchar('\n');
