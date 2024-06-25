@@ -9,4 +9,5 @@ void print_numbers(void)
 
 	for (eded = '0'; eded <= '9'; eded++)
 		_putchar(eded);
+	_putchar("\n");
 }
