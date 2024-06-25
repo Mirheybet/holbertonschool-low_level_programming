@@ -1,4 +1,4 @@
-#inlude "main.h"
+#include "main.h"
 /**
  * more_numbers - main
  * Return: zero
@@ -14,7 +14,7 @@ void more_numbers(void)
 			_putchar(eded + '0');
 		}
 	}
-	_putchar('\n')
+	_putchar('\n');
 
 
 }
