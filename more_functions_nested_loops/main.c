@@ -7,6 +7,6 @@ void print_numbers(void)
 {
 	int eded;
 
-	for (eded = '0'; eded <= '9'; eded++)
-		_putchar(eded);
+        for (eded = 0; eded < 10; eded++)
+                _putchar(eded);
 }
