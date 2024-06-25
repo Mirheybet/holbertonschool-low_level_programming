@@ -6,15 +6,14 @@
 void more_numbers(void)
 {
 	int eded;
-	int say;
 
 	for (eded = 0; eded <= 9; eded++)
 	{
-		for (say = 0; say <= 14; say++)
+		for (eded = 0; eded <= 14; eded++)
 		{
-			if (say > 9)
-				_putchar((say / 10) + '0');
-			_putchar((say % 10) + '0');
+			if (eded > 9)
+				_putchar((eded / 10) + '0');
+			_putchar((eded % 10) + '0');
 		}
 		_putchar('\n');
 	}
