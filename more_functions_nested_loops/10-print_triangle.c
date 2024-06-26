@@ -6,19 +6,19 @@
  */
 void print_triangle(int size)
 {
-	int down, right;
+	int hash, index;
 
 	if (size > 0)
 	{
-		for (down = 1; down <= size; down++)
+		for (hash = 1; hash <= size; hash++)
 		{
-			for (right = size - down; right > 0; size--)
+			for (index = size - hash; index > 0; index--)
 				_putchar(' ');
 
-			for (right = 0; right < down; right++)
+			for (index = 0; index < hash; index++)
 				_putchar('#');
 
-			if (down == size)
+			if (hash == size)
 				continue;
 
 			_putchar('\n');
@@ -27,3 +27,4 @@ void print_triangle(int size)
 
 	_putchar('\n');
 }
+
