@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+{
+    int i , j;
+    int pramida_uzunluq; 
+    
+    printf("%s","Pramidanin uzunlugunu daxil edin = ");
+    scanf("%d",&pramida_uzunluq);
+    
+    for ( i= 0 ; i <= pramida_uzunluq ; i++)
+    {
+        for ( j=0 ; j<=pramida_uzunluq-i; j++)
+        {
+            printf(" ");
+        }
+        
+        for (int k=0;k< pramida_uzunluq-(pramida_uzunluq-i);k++)
+        {
+            printf("0 ");
+        }
+        printf("\n");
+    }
+    return(0); 
+}
