@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main()
+{
+    int a=5;
+    int* ptr_var_a=&a;
+    printf("a variable  address : %p\n" , &a);
+    printf("a variable  address via pointer : %p\n" , ptr_var_a);
+    printf("a variable  via pointer : %d\n" , *ptr_var_a);
+    printf("pointer address : %p\n" , &ptr_var_a);
+    
+}
