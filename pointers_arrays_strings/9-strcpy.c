@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strcpy - main
+ * *_strcpy - main
  * @dest: var 1
  * @src: var 2
  *
