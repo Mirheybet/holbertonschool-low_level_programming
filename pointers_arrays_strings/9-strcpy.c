@@ -1,21 +1,24 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * *_strcpy - main
+ * _strcpy - main
  * @dest: var 1
  * @src: var 2
  *
- * Return: parametr dest
+ * Return: 
  */
+
 char *_strcpy(char *dest, char *src)
 {
-	int index = 0;
+	int i = 0;
 
-	while (src[index])
+	while (*(src + i) != 0)
 	{
-		dest[index] = src[index];
-		index++;
+		*(dest + i) = *(src + i);
+		i++;
 	}
 
+	*(dest + i) = 0;
 	return (dest);
 }
