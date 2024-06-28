@@ -6,7 +6,7 @@
  * @dest: var 1
  * @src: var 2
  *
- * Return: dest 
+ * Return: dest
  */
 
 char *_strcpy(char *dest, char *src)
