@@ -4,6 +4,7 @@
  * print_rev - main
  * @s: var 1
  */
+
 void print_rev(char *s)
 {
 	int len = 0, index;
