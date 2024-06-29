@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * strcat - main
+ * _strcat - main
  * @dest: varptr 1
  * @src: varptr 2
  *
