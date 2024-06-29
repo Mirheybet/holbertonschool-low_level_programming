@@ -7,7 +7,7 @@
  *
  * Return: var @dest
  */
-char *_strcat(char *dest, const char *src)
+char *_strcat(char *dest, char *src)
 {
 	int i = 0, length = 0;
 
