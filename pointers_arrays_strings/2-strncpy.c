@@ -2,24 +2,24 @@
 
 /**
  * _strncpy - main
- * @dest: varptr 1
- * @src: varptr 2
- * @n: var 3
+ * @dest: varptr1
+ * @src: varptr2
+ * @n: var3
  *
  * Return: dest
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i = 0, length = 0;
+	int index = 0, src_len = 0;
 
-	while (dest[i++])
-		length++;
+	while (src[index++])
+		src_len++;
 
-	for (i = 0; src[i] && i < n; i++)
-		dest[i] = src[i];
+	for (index = 0; src[index] && index < n; index++)
+		dest[index] = src[index];
 
-	for (i = length; i < n; i++)
-		dest[i] = '\0';
+	for (index = src_len; index < n; index++)
+		dest[index] = '\0';
 
 	return (dest);
 }
