@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int factorial(int *ptr) {
+    if (*ptr > 0) {
+        (*ptr)--;
+        int result = (*ptr + 1) * factorial(ptr);
+        return result;
+    } else {
+        return 1;
+    }
+}
+
+int main() {
+    int number;
+    printf("Write number => ");
+    scanf("%d", &number);
+    printf("%d\n", factorial(&number));
+    return 0;
+}
