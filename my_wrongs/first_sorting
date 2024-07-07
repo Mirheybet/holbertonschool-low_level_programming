@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() 
+{
+    int arr[7]={5,1,55,3504,97812,5648,1000000};
+    int bck ; 
+    
+    for (int i = 0 ; i < 7 ; i++ )
+    {
+        for (int j = i+1 ; j < 7 ; j++ )
+        {
+            if (arr[i]>arr[j])
+            {
+                bck = arr[i];
+                arr[i] = arr[j] ; 
+                arr[j] = bck ;
+            }
+        }
+    }
+    
+    
+    for(int i = 0 ; i<7 ; i++)
+    {
+        printf("%d\t", arr[i] );   
+    }
+    
+    
+    
+}
