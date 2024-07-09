@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+void main() {
+    int n= 13; 
+    int a= n/ 2 ;
+    int i=1;
+    if (n%2==0)
+        printf("Dont prime(first attack)") ;
+    else
+    {
+        while (i<n/2)
+    {
+        if(n%i==0)
+        {
+            printf("Dont prime(second attack)");
+            break; 
+        }
+        i++;
+    }    
+    }
+    
+}
