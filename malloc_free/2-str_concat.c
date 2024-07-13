@@ -10,6 +10,7 @@
  */
 char *str_concat(char *s1, char *s2)
 {
+	int added = 0;
 	char *strsadd;
 	int i;
 	int size = 0;
@@ -35,8 +36,6 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-
-	int added = 0;
 
 	for (i = 0; s1[i]; i++)
 	{
