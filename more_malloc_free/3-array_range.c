@@ -14,9 +14,12 @@ int *array_range(int min, int max)
 
 	size = max - min + 1;
 
+	if (min > max)
+		return (NULL);
+
 	ptrfor_arr = malloc(sizeof(int) * size);
 
-	if (ptrfor_arr == NULL || min > max)
+	if (ptrfor_arr == NULL)
 		return (NULL);
 
 	for (index = 0; index < size; index++)
