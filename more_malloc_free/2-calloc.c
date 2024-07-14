@@ -12,7 +12,7 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	unsigned int calloc_index;
-	char yaddas_bir, yaddas_iki;
+	char *yaddas_bir, *yaddas_iki;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
