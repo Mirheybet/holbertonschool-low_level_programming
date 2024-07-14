@@ -25,7 +25,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	yaddas_iki = yaddas_bir;
 
 	for (calloc_index = 0; calloc_index < (size * nmemb); calloc_index++)
-		filler[index] = '\0';
+		yaddas2[calloc_index] = '\0';
 
 	return (yaddas_bir);
 }
