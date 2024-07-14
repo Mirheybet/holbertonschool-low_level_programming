@@ -12,20 +12,20 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	unsigned int calloc_index;
-	char yaddas_1, yaddas_2;
+	char yaddas_bir, yaddas_iki;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	yaddas1 = malloc(size * nmemb);
+	yaddas_bir = malloc(size * nmemb);
 
-	if (yaddas1 == NULL)
+	if (yaddas_bir == NULL)
 		return (NULL);
 
-	yaddas2 = yaddas1;
+	yaddas_iki = yaddas_bir;
 
 	for (calloc_index = 0; calloc_index < (size * nmemb); calloc_index++)
 		filler[index] = '\0';
 
-	return (yaddas1);
+	return (yaddas_bir);
 }
