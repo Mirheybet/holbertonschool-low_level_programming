@@ -13,14 +13,10 @@ int sum_them_all(const unsigned int n, ...)
 	int topla = 0;
 
 	if (n == 0)
-	{
 		return (0);
-	}
 
 	for (int i = 0; i < (int) n; i++)
-	{
 		topla += va_arg(args, int);
-	}
 
 	va_end(args);
 	return (topla);
