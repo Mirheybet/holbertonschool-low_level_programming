@@ -20,11 +20,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		words = va_arg(args, char*);
 
-		if (separator != NULL && i != (int) n - 1)
-		{
-			printf("%s", separator);
-		}
-
 		if (words == NULL)
 		{
 			printf("%s", "(nil)");
@@ -32,6 +27,11 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		else
 		{
 			printf("%s", words);
+		}
+
+		if (separator != NULL && i != (int) n - 1)
+		{
+			printf("%s", separator);
 		}
 	}
 
