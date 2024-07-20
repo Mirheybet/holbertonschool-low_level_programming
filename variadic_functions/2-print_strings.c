@@ -10,6 +10,7 @@
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	int i = 0;
+	char *words;
 
 	va_list(args);
 
@@ -17,21 +18,20 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	for (; i < (int)n ; i++)
 	{
-		printf("%s", va_arg(args, char*));
+		words = va_arg(args, char*);
 
 		if (separator != NULL && i != (int) n - 1)
 		{
 			printf("%s", separator);
 		}
 
-		if (separator == NULL)
+		if (words == NULL)
 		{
-			printf("%s", "nil");
+			printf("%s", "(nil)");
 		}
-		
 		else
 		{
-			printf("%s", separator);
+			printf("%s", words);
 		}
 	}
 
