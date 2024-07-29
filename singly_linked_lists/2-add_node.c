@@ -12,7 +12,7 @@
 
 list_t *add_node(list_t **head, const char *str)
 {
-	int length_nodedata = 0;
+	int length_nodedata = 0, index = 0;
 	char *string_dublicate = strdup(str);
 
 	list_t *upd_node = (list_t *) malloc(sizeof(list_t));
@@ -28,9 +28,10 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 	}
 
-	while (str != NULL)
+	while (str[index] != '\0')
 	{
 		length_nodedata++;
+		index++;
 	}
 
 	upd_node->str = string_dublicate;
