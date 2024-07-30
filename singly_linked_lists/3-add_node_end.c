@@ -17,11 +17,13 @@ list_t *add_node_end(list_t **head, const char *str)
 	list_t *th1node = (list_t *) malloc(sizeof(list_t));
 	list_t *th2node;
 
-	if (duplicate_str == NULL || th1node == NULL)
+	if (duplicate_str == NULL)
 	{
+		free(th1node);
 		return (NULL);
 	}
-
+	if (th1node == NULL)
+		return (NULL);
 	while (str[index] != '\0')
 	{
 		length_nodedata++;
@@ -32,11 +34,8 @@ list_t *add_node_end(list_t **head, const char *str)
 	th1node->len = length_nodedata;
 	th1node->next = NULL;
 
-
 	if (*head == NULL)
-	{
 		*head = th1node;
-	}
 
 	else
 	{
