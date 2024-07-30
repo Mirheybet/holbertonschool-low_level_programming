@@ -1,21 +1,20 @@
-#include <stdlib.h>
-#include <stdio.h>
 #include "lists.h"
+
 /**
- * dlistint_len - main
- * @h: Clone of dblylink
- * Return: count of nodes
+ * print_dlistint - main
+ * @h: var1
+ * Return: mynodes
  */
-
-size_t dlistint_len(const dlistint_t *h)
+size_t print_dlistint(const dlistint_t *h)
 {
-        size_t countnode = 0;
+	size_t countnodes = 0;
 
-        while (h != NULL)
-        {
-                countnode++;
-                printf("%d\n",h->n);
-                h = h->next;
-        }
-        return (countnode);
+	while (h)
+	{
+		countnodes++;
+		printf("%d\n", h->n);
+		h = h->next;
+	}
+
+	return (countnodes);
 }
