@@ -4,6 +4,7 @@
 #include "lists.h"
 
 /**
+ * premain - before main
  * __attribute__ - main
  * @constructor: var1
  */
