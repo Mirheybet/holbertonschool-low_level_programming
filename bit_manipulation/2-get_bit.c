@@ -2,7 +2,10 @@
 #include "main.h"
 
 /**
- *
+ * get_bit - main
+ * @n: var1
+ * @index: var2
+ * Return: minimum bit
  */
 
 int get_bit(unsigned long int n, unsigned int index)
